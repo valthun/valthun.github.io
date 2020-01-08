@@ -1,15 +1,33 @@
+header{
+    background-color: #2A7221;
+}
 h1 {
     font-family: 'Acme', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    color: #f6f5ae;
 }
 body {
     font-family: 'Bitter', serif;
+    max-width: 800px;
+    margin: 30 0 0 30;
+}
+footer{
+    background-color: #2A7221;
+    color: #f6f5ae;
+    text-align: center;
 }
 footer li {
-    list-style-type: none;
+        list-style-type: none;
     margin: 0;
     padding: 0;
     display: inline-block;
+}
+footer li:after {
+    content: " | ";
+}
+
+footer li:last-child:after {
+    content: ""}
 }
