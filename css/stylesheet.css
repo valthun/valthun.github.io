@@ -1,9 +1,10 @@
-header{
+header {
     background-color: #2A7221;
     border-radius: 20px;
     height: 75px;
-    
+
 }
+
 h1 {
     font-size: 3.5em;
     font-family: 'Acme', sans-serif;
@@ -14,7 +15,7 @@ h1 {
     vertical-align: middle;
 }
 
-img{
+img {
     float: right;
     border-radius: 5px;
     width: 125px;
@@ -22,10 +23,12 @@ img{
     margin-right: 30px;
     margin-top: -50px;
 }
+
 h2 {
     border-bottom: 2px solid;
     padding-bottom: 5px;
 }
+
 body {
     font-family: 'Bitter', serif;
     max-width: 800px;
@@ -34,10 +37,10 @@ body {
 }
 
 .middle {
-   margin: 10px 30px 10px; 
+    margin: 10px 30px 10px;
 }
 
-footer{
+footer {
     background-color: #2A7221;
     text-align: center;
     border-radius: 20px;
@@ -45,6 +48,7 @@ footer{
     padding-top: 10px;
     color: red;
 }
+
 footer li {
     color: #f9e7e7;
     list-style-type: none;
@@ -55,9 +59,11 @@ footer li {
 footer li a:link {
     color: #f9e7e7;
 }
+
 footer li:after {
     content: " | ";
 }
 
 footer li:last-child:after {
-    content: ""}
+    content: ""
+}
