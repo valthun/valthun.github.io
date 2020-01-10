@@ -39,16 +39,17 @@ body {
 
 footer{
     background-color: #2A7221;
-    color: #f9e7e7;
     text-align: center;
     border-radius: 20px;
     height: 75px;
-    font-family: 'Acme', sans-serif;
     padding-top: 10px;
+    color: red;
 }
 footer li {
+    color: #f9e7e7;
     list-style-type: none;
     display: inline-block;
+    font-family: 'Acme', sans-serif;
 }
 
 footer li a:link {
