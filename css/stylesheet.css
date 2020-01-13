@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Acme|Bitter:400,400i,700&display=swap');
 
+
 header {
+    /*display: flex;
+    flex-direction: column;*/
     background-color: #2A7221;
     border-radius: 20px;
-    height: 75px;
+    height: auto;
 
 }
 
@@ -18,7 +21,6 @@ h1 {
 }
 
 header img {
-    
     border-radius: 5px;
     width: 125px;
     box-shadow: 0px 0px 10px 5px;
@@ -32,9 +34,10 @@ h2 {
 }
 
 body {
+
     font-family: 'Bitter', serif;
     max-width: 800px;
-    margin: 30px 0px 0px 30px;
+    margin: auto;
 
 }
 
@@ -46,7 +49,7 @@ footer {
     background-color: #2A7221;
     text-align: center;
     border-radius: 20px;
-    height: 75px;
+    height: auto;
     padding-top: 10px;
     color: red;
 }
