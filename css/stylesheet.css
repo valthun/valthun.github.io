@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Acme|Bitter:400,400i,700&display=swap');
+
 header {
     background-color: #2A7221;
     border-radius: 20px;
@@ -15,13 +17,13 @@ h1 {
     vertical-align: middle;
 }
 
-img {
-    float: right;
+header img {
+    
     border-radius: 5px;
     width: 125px;
     box-shadow: 0px 0px 10px 5px;
     margin-right: 30px;
-    margin-top: -50px;
+    margin-top: 15px;
 }
 
 h2 {
