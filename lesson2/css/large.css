@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto+Slab:400,500,600,700,800,900&display=swap');
+
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+body {
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+img {
+    width: 300px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: 'Oswald', sans-serif;
+}
+h2 {
+    font-size: 1.5em
+}
