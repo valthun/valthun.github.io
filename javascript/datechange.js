@@ -1,1 +1,1 @@
-document.write(document.lastModified)
+document.write(document.lastModified);
