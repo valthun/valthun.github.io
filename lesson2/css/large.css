@@ -6,9 +6,10 @@ font-family: 'Roboto Slab', serif;
 */
 
 /*
-header color #BEB7A4 Black Shadows
+header color cce8cc Tea Green
 body color #F4F7F5 White Smoke
 text color #313628 Black Leather Jacket
+odd article color #d9dbf1 Azureish White
 */
 
 h1, h2, h3, h4, h5, h6{
@@ -36,10 +37,10 @@ h2 {
 
 img {
     width: 300px;
-    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     border-style: solid;
     border-color: #6d696a;
-    border: 1px 1px 1px 1px;
+    border: 1px 0px 0px 0px;
 }
 
 .headfoot ul li{
@@ -60,8 +61,18 @@ img {
     
 }
 
+article h2{
+    padding-top: 20px;
+}
+
+p{
+    margin: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+    text-indent: 3%;
+}
 .headfoot {
-    background-color: #BEB7A4;
+    background-color: #cce8cc;
     padding: 3px 3px;
     border-radius: 10px;
     max-width: 100%;
@@ -69,4 +80,9 @@ img {
 
 .update {
     color: #44af69;
+}
+
+.odd {
+    background-color: #d9dbf1;
+    border-radius: 10px;
 }
