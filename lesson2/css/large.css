@@ -12,7 +12,12 @@ text color #313628 Black Leather Jacket
 odd article color #d9dbf1 Azureish White
 */
 
-h1, h2, h3, h4, h5, h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Oswald:', sans-serif;
     font-weight: 400;
 }
@@ -43,40 +48,42 @@ img {
     border: 1px 0px 0px 0px;
 }
 
-.headfoot ul li{
+.headfoot ul li {
     list-style-type: none;
     font-weight: 400;
     display: inline-block;
     padding: 10px;
 }
 
-.headfoot nav a{
+.headfoot nav a {
     padding: 5px 5px 5px 5px;
     text-decoration: none;
     color: #313628;
 }
-.headfoot ul a{
+
+.headfoot ul a {
     color: #313628;
     text-decoration: none;
-    
+
 }
 
-article h2{
+article h2 {
     padding-top: 20px;
 }
 
-p{
+p {
     margin: 20px;
     padding-bottom: 20px;
     text-align: left;
     text-indent: 3%;
 }
+
 .headfoot {
     background-color: #cce8cc;
     padding: 3px 3px;
     border-radius: 10px;
     max-width: 100%;
-} 
+}
 
 .odd {
     background-color: #d9dbf1;
