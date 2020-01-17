@@ -48,7 +48,9 @@ footer {
     text-align: center;
     border-radius: 20px;
     height: auto;
-    padding-top: 10px;
+    padding: 10px 5px;
+    font-family: 'Acme', sans-serif;
+    color: #f9e7e7;
 }
 
 footer li {
@@ -58,7 +60,7 @@ footer li {
     font-family: 'Acme', sans-serif;
 }
 
-footer li a:link {
+footer li a {
     color: #f9e7e7;
 }
 
