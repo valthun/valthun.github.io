@@ -1,0 +1,72 @@
+/*
+Colors are the following
+#fbf5f3
+#c0c5c1 - header and footer
+#689689 - background color
+#73a6ad
+#0c0910 - font color
+*/
+
+/*
+font-family: 'Crete Round', serif; body
+font-family: 'Yanone Kaffeesatz', sans-serif; header
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+img {
+    max-width: 300px;
+}
+
+header,
+footer {
+    background-color: #c0c5c1;
+}
+
+header img {
+    max-width: 100px;
+}
+
+header li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 10px 5px;
+}
+
+body {
+    background-color: #689689;
+    margin: auto;
+    color: #0c0910;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Crete Round', serif;
+}
+
+footer {
+    height: auto;
+    padding: 10px 5px;
+
+}
+
+footer li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+footer li:after {
+    content: " | ";
+}
+
+footer li:last-child:after {
+    content: ""
+}
+
+a {
+    text-decoration: none;
+    color: #0c0910;
+}
