@@ -106,3 +106,20 @@ a {
     margin: 10px auto;
 }
 
+.persona {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top: 1px solid #0c0910;
+    border-right: 1px solid #0c0910;
+}
+
+.persona > span {
+    padding: 7px 3px;
+    border-bottom: 1px solid #0c0910;
+    border-left: 1px solid #0c0910;
+}
+
+span strong {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.3em;
+}
