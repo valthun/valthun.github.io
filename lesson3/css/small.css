@@ -8,12 +8,22 @@ Colors are the following
 */
 
 /*
-font-family: 'Crete Round', serif; body
-font-family: 'Yanone Kaffeesatz', sans-serif; header
+font-family: 'Crete Round', serif; - body
+font-family: 'Yanone Kaffeesatz', sans-serif; - header
 */
 
 @import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
 
+@media only screen and (max-width: 300px) {
+
+body{
+    max-width: auto;
+}
+img{
+    max-width: 90%;
+}
+
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -23,33 +33,42 @@ h1{
     font-size: 3em;
 }
 
-img {
-    max-width: 300px;
-}
 
+img{
+    max-width: 800px;
+}
 header,
 footer {
     background-color: #c0c5c1;
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-header img {
+header .sun {
+    float: left;
+}
+.sun {
     max-width: 100px;
+    max-height: 100px;
 }
 
 header li {
     display: inline-block;
     list-style-type: none;
-    padding: 10px 5px;
+    padding: 5px;
 }
+
 
 body {
     background-color: #689689;
     margin: auto;
     color: #0c0910;
     text-align: center;
-    max-width: 500px;
     font-family: 'Crete Round', serif;
+    max-width: 800px;
+}
+
+body a{
+    text-decoration: underline;
 }
 
 footer {
@@ -81,7 +100,9 @@ a {
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+
 .scheme {
     box-shadow: 0px 0px 10px 5px;
-    margin: 10px;
+    margin: 10px auto;
 }
+
