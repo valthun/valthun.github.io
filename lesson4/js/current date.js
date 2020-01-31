@@ -1,0 +1,21 @@
+var year = new Date().getFullYear();
+var m = new Date();
+var month = new Array();
+month[0] = "01";
+month[1] = "02";
+month[2] = "03";
+month[3] = "04";
+month[4] = "05";
+month[5] = "06";
+month[6] = "07";
+month[7] = "08";
+month[8] = "09";
+month[9] = "10";
+month[10] = "11";
+month[11] = "12";
+var mo = month[m.getMonth()];
+var day = new Date().getDate();
+
+document.getElementById("currentyear").innerHTML=year;
+document.getElementById("currentmonth").innerHTML=mo;
+document.getElementById("currentday").innerHTML=day;

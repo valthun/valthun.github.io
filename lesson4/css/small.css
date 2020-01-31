@@ -1,0 +1,93 @@
+/*
+Colors are the following
+#fbf5f3
+#c0c5c1 - header and footer
+#689689 - background color
+#73a6ad
+#0c0910 - font color
+*/
+
+/*
+font-family: 'Crete Round', serif; - body
+font-family: 'Yanone Kaffeesatz', sans-serif; - header
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+
+nav {
+    background-color: #73a6ad;
+    font-size: 1.6em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+header, footer {
+    background-color: #689689;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.preston-hero-img {
+    max-width: 800px;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+header a {
+    text-decoration: none;
+    color: #0c0910;
+}
+
+main {
+    background-color: #c0c5c1;
+    font-family: 'Crete Round', serif;
+}
+
+.article-img {
+    float: right;
+    max-width: 50%;
+}
+article {
+    display: grid;
+    text-align: justify;
+    margin: 20px;
+
+}
+
+body {
+    max-width: 800px;
+    text-align: center;
+    color: #0c0910;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.contact {
+    float: right;
+}
+
+iframe {
+    float: left;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.footerbar {
+    background-color: #73a6ad;
+    font-size: 1.6em;
+    padding: 10px;
+}
