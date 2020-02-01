@@ -14,6 +14,17 @@ font-family: 'Yanone Kaffeesatz', sans-serif; - header
 
 @import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
 
+@media only screen and (max-width: 500px){
+    .hamburger {
+        width: 30px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #0c0910;
+        margin: 5px 0px;
+    }
+
+
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -22,50 +33,48 @@ h1 {
     font-size: 3em;
 }
 
-nav {
-    background-color: #73a6ad;
-    font-size: 1.6em;
-    padding: 10px;
+header{ 
     display: flex;
-    justify-content: space-evenly;
-
+    align-items: center;
+    justify-content: center;
 }
 
 header, footer {
     background-color: #689689;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    max-width: 100%;
-    padding: 5px;
+    max-width: 200vw;
+    padding: 3px;
+    line-height: 3px;
+    font-size: 1.5em;
 }
 
-.preston-hero-img {
-    max-width: 800px;
+footer {
+    margin: 20px;
 }
 
 .logo {
     max-width: 100px;
     max-height: 100px;
+    margin-right: 10%;
 }
 
-header a {
+nav {
+    top: 0;
+    background-color: #73a6ad;
+}
+
+nav ul{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.6em;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+nav a{
     text-decoration: none;
     color: #0c0910;
-}
-
-main {
-    background-color: #c0c5c1;
-    font-family: 'Crete Round', serif;
-}
-
-.article-img {
-    float: right;
-    max-width: 50%;
-}
-article {
-    display: grid;
-    text-align: justify;
-    margin: 20px;
-
 }
 
 body {
@@ -73,21 +82,15 @@ body {
     text-align: center;
     color: #0c0910;
     margin: auto;
-    overflow-x: hidden;
+    background-color: #c0c5c1;
+    font-family: 'Crete Round', serif;
 }
 
-.contact {
-    float: right;
-}
-
-iframe {
-    float: left;
-    max-width: 400px;
-    max-height: 300px;
-}
-
-.footerbar {
+.body {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #0c0910;
+    margin: 20px;
+    padding: 8px;
     background-color: #73a6ad;
-    font-size: 1.6em;
-    padding: 10px;
 }
