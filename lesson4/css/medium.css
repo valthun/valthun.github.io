@@ -1,0 +1,19 @@
+@media only screen and (min-width: 501px) {
+    main {
+        max-width: 800px;
+    }
+    footer {
+        max-width: 800px;
+    }
+    nav ul{
+        font-size: 1.6em;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        }
+    
+        nav a {
+            text-decoration: none;
+        }
+}

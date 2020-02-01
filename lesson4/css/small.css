@@ -15,14 +15,33 @@ font-family: 'Yanone Kaffeesatz', sans-serif; - header
 @import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
 
 @media only screen and (max-width: 500px){
-    .hamburger {
-        width: 30px;
-        height: 4px;
-        border-radius: 2px;
-        background-color: #0c0910;
-        margin: 5px 0px;
+    header h1 {
+        font-size: 2em;
     }
 
+    header h3 {
+        font-size: .8em;
+    }
+
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav li a{
+        display: block;
+        text-align: center;
+        padding: .5em;
+   }
+
+   nav li a:hover {
+       background-color: #fbf5f3;
+   }
+   nav li a:active {
+       background-color: #c0c5c1;
+   }
 
 }
 
@@ -39,49 +58,48 @@ header{
     justify-content: center;
 }
 
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 6px;
+}
+
 header, footer {
     background-color: #689689;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    max-width: 200vw;
     padding: 3px;
     line-height: 3px;
     font-size: 1.5em;
 }
 
 footer {
-    margin: 20px;
-}
-
-.logo {
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 10%;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav {
-    top: 0;
+    width: 100%;
     background-color: #73a6ad;
 }
 
 nav ul{
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 1.6em;
-    padding: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
+    }
 
 nav a{
     text-decoration: none;
     color: #0c0910;
 }
 
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
 body {
-    max-width: 800px;
+    
     text-align: center;
     color: #0c0910;
-    margin: auto;
     background-color: #c0c5c1;
     font-family: 'Crete Round', serif;
 }
