@@ -13,7 +13,11 @@
         list-style-type: none;
         }
     
-        nav a {
-            text-decoration: none;
-        }
+    nav a {
+        text-decoration: none;
+    }
+
+    nav li:first-child{
+        display: none;
+    }
 }
