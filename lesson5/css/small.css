@@ -1,0 +1,128 @@
+/*
+Colors are the following
+#fbf5f3
+#c0c5c1 - header and footer
+#689689 - background color
+#73a6ad
+#0c0910 - font color
+*/
+
+/*
+font-family: 'Crete Round', serif; - body
+font-family: 'Yanone Kaffeesatz', sans-serif; - header
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
+
+@media only screen and (max-width: 500px){
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h3 {
+        font-size: .8em;
+    }
+
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child {
+        display: block;
+    }
+
+    nav li a{
+        display: block;
+        text-align: center;
+        padding: .5em;
+   }
+
+   nav li a:hover {
+       background-color: #fbf5f3;
+   }
+   nav li a:active {
+       background-color: #c0c5c1;
+   }
+
+   .response li{
+       display: block;
+   }
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 6px;
+}
+
+header, footer {
+    background-color: #689689;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 3px;
+    line-height: 3px;
+    font-size: 1.5em;
+}
+
+footer {
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    background-color: #73a6ad;
+}
+
+nav ul{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+
+nav a{
+    text-decoration: none;
+    color: #0c0910;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+body {
+    
+    text-align: center;
+    color: #0c0910;
+    background-color: #c0c5c1;
+    font-family: 'Crete Round', serif;
+}
+
+.body {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #0c0910;
+    margin: 20px;
+    padding: 8px;
+    background-color: #73a6ad;
+}

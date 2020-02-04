@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Home page for Plain Weather week 5">
+    <link rel="shortcut icon" href="weather.ico">
+    <title>WDD230 Portal</title>
+    <link rel="stylesheet" type="text/css" href='css/normalize.css'>
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weatherlogo.png" alt="logo" class="logo">
+        <div>
+            <H1>Plain Weather</H1>
+            <h4>Just the weather. PLAIN and simple</h4>
+        </div>
+
+    </header>
+    <nav class="navi">
+            <ul>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="body">Hero w/ weather summary</div>
+        <div class="body">5 Day Forecast</div>
+        <div class="body">Article</div>
+        <div class="body">Contact Information</div>
+
+    </main>
+    <footer>
+
+        <p>&copy; Plain Weather | attributions | Jereme Skelton</p>
+        <p><span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span> <span id="currentyear"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>
