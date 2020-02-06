@@ -20,4 +20,10 @@
     nav li:first-child{
         display: none;
     }
+
+    .hero-img{
+        width: 100%;
+        height: 350px;
+
+    }
 }
