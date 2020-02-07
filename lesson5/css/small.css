@@ -65,6 +65,10 @@ font-family: 'Yanone Kaffeesatz', sans-serif; - header
        display: none;
    }
 
+   .contact iframe{
+       display: none;
+   }
+
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -118,6 +122,11 @@ main {
     margin: auto;
 }
 
+main h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
 body {
     
     text-align: center;
@@ -149,8 +158,40 @@ body {
 
 .hero-summary {
     position: absolute;
+    top: 20px;
+    left: 20px;
     background-color: #689689;
+    text-align: justify;
+    opacity: .8;
     padding: 10px;
     line-height: 3px;
     margin: auto;
+    box-shadow: 0px 0px 8px 3px;
+}
+
+.hero-summary p{
+    opacity: 1;
+}
+
+.article h2{
+    line-height: 3px;
+}
+
+.article {
+    text-align: justify;
+    margin: 5px;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.contact {
+    text-align: center;
+    line-height: .5em;
+}
+
+.concat iframe{
+    float: left;
+    width: 500px;
 }
