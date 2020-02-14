@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Home page for Plain Weather week 5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>WDD230 Portal</title>
+    <link rel="stylesheet" type="text/css" href='css/normalize.css'>
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weatherlogo.png" alt="logo" class="logo">
+        <div>
+            <H1>Plain Weather</H1>
+            <h4>Just the weather. PLAIN and simple</h4>
+        </div>
+
+    </header>
+    <nav class="navi">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cit230_image_franklinmedium.jpg" media="(min-width: 500px) and (max-width: 799px)"> 
+                <source srcset="images/cit230_image_franklinlarge.jpg" media="(min-width: 800px)"> 
+                <img src="images/cit230_image_franklinsmall.jpeg" alt="hero" class="hero-img">
+            </picture>
+            <section class="hero-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span>Cloudy</span></p>
+                <p>High: <span id="temp">35</span>&#176;F</p>
+                <p>Wind Chill: <span id="chill"></span>&#176;F</p>
+                <p>Humidity: <span>78</span>%</p>
+                <p>Wind Speed: <span id="speed">10</span> mph</p>
+            </section>
+        </div>
+        <div class="forcast">5 Day Forecast</div>
+        <article class="article">
+            <h2>Heavy Rains</h2>
+            <p>by Jereme Skelton</p>
+            <img src="images/rainybmw.jpg" alt="article img" class="article-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. At quis risus
+                sed vulputate. Vulputate eu scelerisque felis imperdiet proin. Lacus vestibulum sed arcu non odio
+                euismod. Commodo viverra maecenas accumsan lacus vel facilisis. Ac felis donec et odio. Et netus et
+                malesuada fames ac turpis. Cras ornare arcu dui vivamus arcu. Molestie ac feugiat sed lectus vestibulum.
+                Dictum sit amet justo donec enim. Nulla facilisi etiam dignissim diam quis enim lobortis. Ut sem viverra
+                aliquet eget sit amet tellus. Vulputate dignissim suspendisse in est ante in. Volutpat odio facilisis
+                mauris sit.
+                Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Molestie ac feugiat sed lectus
+                vestibulum mattis ullamcorper velit sed. Sit amet purus gravida quis blandit. Erat imperdiet sed euismod
+                nisi porta lorem mollis aliquam ut. Enim nec dui nunc mattis enim. Netus et malesuada fames ac turpis
+                egestas sed. Purus non enim praesent elementum. Nisl tincidunt eget nullam non nisi. Adipiscing elit
+                pellentesque habitant morbi tristique senectus et netus et. Curabitur vitae nunc sed velit dignissim.
+            </p>
+        </article>
+
+        <div class="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11841.647787700886!2d-111.87662355171112!3d42.09864745555146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1581076661102!5m2!1sen!2sus" allowfullscreen=""></iframe> 
+            <p>Contact Information</p>
+            <p>Address</p>
+            <p>Address</p>
+            <p>email</p>
+            <p>phone number</p>
+            </div>
+
+    </main>
+    <footer>
+
+        <p>&copy; <span id="copyyear"></span> Plain Weather | attributions | Jereme Skelton</p>
+        <p><span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span> <span
+                id="currentyear"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="js/winchill.js"></script>
+</body>
+
+</html>

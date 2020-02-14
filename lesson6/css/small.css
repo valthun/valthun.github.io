@@ -1,0 +1,190 @@
+/*
+Colors are the following
+#fbf5f3
+#c0c5c1 - header and footer
+#689689 - background color
+#73a6ad
+#0c0910 - font color
+*/
+
+/*
+font-family: 'Crete Round', serif; - body
+font-family: 'Yanone Kaffeesatz', sans-serif; - header
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');
+
+@media only screen and (max-width: 500px){
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h3 {
+        font-size: .8em;
+    }
+
+    nav {
+        text-align: center;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child {
+        display: block;
+    }
+
+    nav li a{
+        display: block;
+        text-align: center;
+        padding: .5em;
+   }
+
+   nav li a:hover {
+       background-color: #fbf5f3;
+   }
+   nav li a:active {
+       background-color: #c0c5c1;
+   }
+
+   .response li{
+       display: block;
+   }
+
+   .hero-img{
+       width: 100%;
+       height: 250px;
+   }
+
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+h1 {
+    font-size: 3em;
+}
+
+header{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 6px;
+}
+
+header, footer {
+    background-color: #689689;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding: 3px;
+    line-height: 3px;
+    font-size: 1.5em;
+}
+
+footer {
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    background-color: #73a6ad;
+}
+
+nav ul{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+
+nav a{
+    text-decoration: none;
+    color: #0c0910;
+}
+
+main {
+    max-width: 500px;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+body {
+    
+    text-align: center;
+    color: #0c0910;
+    background-color: #c0c5c1;
+    font-family: 'Crete Round', serif;
+}
+
+.body {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #0c0910;
+    margin: 20px;
+    padding: 8px;
+    background-color: #73a6ad;
+}
+
+.forcast {border-style: dashed;
+    border-width: 1px;
+    border-color: #0c0910;
+    margin: 20px;
+    padding: 8px;
+    background-color: #73a6ad;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-summary {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #689689;
+    text-align: justify;
+    opacity: .8;
+    padding: 10px;
+    line-height: 3px;
+    margin: auto;
+    box-shadow: 0px 0px 8px 3px;
+}
+
+.hero-summary p{
+    opacity: 1;
+}
+
+.article h2{
+    line-height: 3px;
+}
+
+.article {
+    text-align: justify;
+    margin: 5px;
+}
+
+.article-img {
+    width: 100%;
+}
+
+.contact {
+    text-align: center;
+    line-height: .5em;
+}
+
+.concat iframe{
+    float: left;
+    width: 500px;
+}

@@ -1,0 +1,53 @@
+@media only screen and (min-width: 501px) {
+    main {
+        max-width: 800px;
+    }
+    footer {
+        max-width: 800px;
+    }
+    nav ul{
+        font-size: 1.2em;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin: 0;
+        }
+    
+    nav a {
+        text-decoration: none;
+    }
+
+    nav li:first-child{
+        display: none;
+    }
+
+    .hero-img{
+        width: 100%;
+        height: 350px;
+    }
+
+    
+    .article-img{
+        float: right;
+        width: 350px;
+        padding: 8px;
+        clear: right;
+        overflow: auto;
+    }
+
+    .contact{
+        text-align: right;
+        margin: 10px;
+    }
+
+    .forcast{
+        display: block;
+    }
+ 
+    .contact iframe{
+        float: left;
+        display: block;
+    }
+ 
+}
