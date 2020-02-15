@@ -45,6 +45,10 @@
     .forcast{
         display: block;
     }
+
+    .forcast img{
+        width: 75px;
+    }
  
     .contact iframe{
         float: left;

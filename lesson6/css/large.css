@@ -13,9 +13,10 @@
     .hero-img{
         width: 100%;
         /*height: 450px;*/
-
     }
 
-
+    .forcast img{
+            width: 125px;
+        }
 
 }

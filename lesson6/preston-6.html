@@ -40,8 +40,8 @@
         <div class="hero">
             <picture class="hero-img">
                 <source srcset="images/cit230_image_franklinmedium.jpeg"
-                    media="(min-width: 500px) and (max-width: 799px)">
-                <source srcset="images/cit230_image_franklinlarge.jpeg" media="(min-width: 800px)">
+                    media="(min-width: 600px) and (max-width: 999px)">
+                <source srcset="images/cit230_image_franklinlarge.jpeg" media="(min-width: 1000px)">
                 <img src="images/cit230_image_franklinsmall.jpeg" alt="hero">
             </picture>
             <section class="hero-summary">
@@ -53,7 +53,16 @@
                 <p>Wind Speed: <span id="speed">10</span> mph</p>
             </section>
         </div>
-        <div class="forcast">5 Day Forecast</div>
+        <div class="forcast">
+            <h2>5 Day Forcast</h2>
+            <img id="sat" src="images/forcast_saturday.png" alt="saturday">
+            <img id="sun" src="images/forcast_sunday.png" alt="sunday">
+            <img id="mon" src="images/forcast_monday.png" alt="monday">
+            <img id="tue" src="images/forcast_tuesday.png" alt="tuesday">
+            <img id="wed" src="images/forcast_wed.png" alt="wednesday">
+            <img id="thur" src="images/forcast_thursday.png" alt="thursday">
+            <img id="fri" src="images/forcast_friday.png" alt="friday">
+        </div>
         <article class="article">
             <h2>Heavy Rains</h2>
             <p>by Jereme Skelton</p>
@@ -89,6 +98,7 @@
     <footer>
 
         <p>&copy; <span id="copyyear"></span> Plain Weather | attributions | Jereme Skelton</p>
+        <p>forcast logos<a href="https://www.vecteezy.com/"> Vectors by Vecteezy</a></p>
         <p><span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span> <span
                 id="currentyear"></span></p>
     </footer>

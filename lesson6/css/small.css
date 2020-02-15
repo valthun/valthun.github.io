@@ -14,35 +14,33 @@ font-family: 'Yanone Kaffeesatz', sans-serif; - header
 
 /*@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');*/
 
-@media only screen and (max-width: 500px){
-    nav {
-        text-align: center;
-    }
+nav {
+    text-align: center;
+}
 
-    nav li {
-        display: none;
-    }
+nav li {
+    display: none;
+}
 
-    nav li:first-child {
-        display: block;
-    }
+nav li:first-child {
+    display: block;
+}
 
-    nav li a{
-        display: block;
-        text-align: center;
-        padding: .5em;
-   }
+nav li a{
+    display: block;
+    text-align: center;
+    padding: .5em;
+}
 
-   nav li a:hover {
-       background-color: #fbf5f3;
-   }
-   nav li a:active {
-       background-color: #c0c5c1;
-   }
+nav li a:hover {
+   background-color: #fbf5f3;
+}
+nav li a:active {
+   background-color: #c0c5c1;
+}
 
-   .response li{
-       display: block;
-   }
+.response li{
+   display: block;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -120,13 +118,13 @@ body {
     background-color: #73a6ad;
 }
 
-.forcast {border-style: dashed;
-    border-width: 1px;
+.forcast {
     border-color: #0c0910;
-    margin: 20px;
+    margin: auto;
     padding: 8px;
     background-color: #73a6ad;
     display: none;
+    line-height: 3em;
 }
 
 .hero {
