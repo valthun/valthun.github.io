@@ -15,20 +15,8 @@ font-family: 'Yanone Kaffeesatz', sans-serif; - header
 /*@import url('https://fonts.googleapis.com/css?family=Crete+Round:400,400i|Yanone+Kaffeesatz:200,300,400,500,600,700&display=swap');*/
 
 @media only screen and (max-width: 500px){
-    header h1 {
-        font-size: 2em;
-    }
-
-    header h3 {
-        font-size: .8em;
-    }
-
     nav {
         text-align: center;
-    }
-    nav ul {
-        margin: 0;
-        padding: 0;
     }
 
     nav li {
@@ -86,7 +74,7 @@ header, footer {
 
 footer {
     max-width: 500px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 nav {
@@ -96,6 +84,8 @@ nav {
 
 nav ul{
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    margin: 0;
+    padding: 0;
     }
 
 nav a{
@@ -144,7 +134,7 @@ body {
 }
 
 .hero-img {
-    width: 500px;
+    width: 100%;
 }
 
 .hero-summary {
@@ -181,11 +171,15 @@ body {
 .contact {
     text-align: center;
     line-height: .5em;
+    background-color: #73a6ad;
+    margin: 0;
 }
 
-.concat iframe{
+
+.contact iframe{
     float: left;
-    width: 500px;
+    width: 425px;
+    margin: 8px;
 }
 
 #pancake{
@@ -199,4 +193,11 @@ body {
     margin: 25px auto;
     margin-top: 5px;
     width: 100%;
+}
+
+.active {
+    background-color: #fbf5f3;
+    padding: 11px;
+    border-radius: 6px;
+    font-weight: bold;
 }
