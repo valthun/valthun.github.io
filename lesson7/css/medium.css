@@ -56,5 +56,9 @@
         float: left;
         display: block;
     }
+
+    .igallery img {
+        grid-template-columns: 1fr 1fr;
+    }
  
 }

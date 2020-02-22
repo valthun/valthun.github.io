@@ -211,3 +211,9 @@ body {
     border-radius: 6px;
     font-weight: bold;
 }
+
+.igallery img{
+    display: grid;
+    margin: 1rem auto;
+    max-width: 95%;
+}
