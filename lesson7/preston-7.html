@@ -32,13 +32,18 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero">
-            <img src="images/sunflowerhero.jpg" alt="hero">
+            <picture class="hero-img">
+                <source srcset="images/sunflowerhero_medium.jpg"
+                    media="(min-width: 600px) and (max-width: 999px)">
+                <source srcset="images/sunflowerhero_large.jpg" media="(min-width: 1000px)">
+                <img src="images/sunflowerhero_small.jpg" alt="hero">
+            </picture>
             <section class="hero-summary">
                 <h3>Weather Summary</h3>
                 <p>Currently: <span>Cloudy</span></p>

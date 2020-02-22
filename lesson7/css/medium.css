@@ -26,7 +26,10 @@
     nav li:first-child{
         display: none;
     }
-
+    .hero img {
+        width: 100%;
+    }
+    
     .article-img{
         float: right;
         width: 350px;

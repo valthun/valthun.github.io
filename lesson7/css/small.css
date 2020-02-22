@@ -1,8 +1,8 @@
 /*
 Colors are the following
 #fbf5f3
-#c0c5c1 - header and footer
-#689689 - background color
+#c0c5c1 - background
+#689689 - header and footer
 #73a6ad
 #0c0910 - font color
 */
@@ -48,8 +48,8 @@ header,
 footer {
     background-color: #689689;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    padding: 3px;
-    line-height: 3px;
+    margin: .5px;
+    padding: 2px;
     font-size: 1.5em;
 }
 
@@ -93,7 +93,8 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #fbf5f3;
+    background-color: #c0c5c1;
+    border-radius: 6px;
 }
 
 nav li a:active {
@@ -186,9 +187,9 @@ body {
 
 
 .contact iframe {
-    float: left;
+    display: inline-block;
     width: 425px;
-    margin: 8px;
+    margin: 8px auto;
 }
 
 #pancake {
