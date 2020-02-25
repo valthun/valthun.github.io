@@ -1,6 +1,6 @@
 WebFont.load({
     google: {
       families: 
-        ['Crete Round', 'Yanone Kaffeesatz', 'Odibee Sans']
+        ['Crete Round', 'Yanone Kaffeesatz', 'Odibee Sans', 'Ubuntu']
     }
   });

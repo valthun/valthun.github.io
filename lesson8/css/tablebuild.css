@@ -28,7 +28,7 @@ th {
 
 caption {
     background-color: #7fb9c2;
-    font-weight: bolder;
+    font-weight: 800;
     font-size: 1.5em;
 }
 
@@ -45,7 +45,7 @@ td, th, tfoot, caption {
 }
 
 table, td, th, tfoot, caption {
-    border: 1px solid white;
+    border: 1px solid #bbbbbb;
 }
 
 tfoot{
