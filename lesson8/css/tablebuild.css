@@ -16,7 +16,8 @@ ONE instance of first-child or nth:child()
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 body {
     font-family: ubuntu, sans-serif;
-    box-shadow: 8px 8px 8px #7fb9c2;
+    
+    padding: 30px;
 }
 
 th {
@@ -35,7 +36,8 @@ table {
     text-align: center;
     margin: 0 auto;
     border-collapse: collapse;
-    table-layout: fixed;
+    max-width: 300px;
+    box-shadow: 8px 8px 8px #7fb9c2;
 }
 
 td, th, tfoot, caption {
