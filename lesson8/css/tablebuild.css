@@ -37,7 +37,7 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     max-width: 300px;
-    box-shadow: 8px 8px 8px #7fb9c2;
+    box-shadow: 5px 5px 8px #7fb9c2;
 }
 
 td, th, tfoot, caption {
