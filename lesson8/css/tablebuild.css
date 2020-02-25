@@ -35,6 +35,7 @@ table {
     text-align: center;
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 
 td, th, tfoot, caption {
