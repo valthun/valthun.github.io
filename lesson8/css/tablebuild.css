@@ -1,0 +1,66 @@
+/*
+font-family: ubuntu, sans-serif;
+color scheme
+data rows
+#e7f0ed
+#e7ffed
+other rows
+#628ca6
+#7fb9c2
+black
+white
+
+MAXIMUM one class or id selector
+ONE instance of first-child or nth:child()
+*/
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+body {
+    font-family: ubuntu, sans-serif;
+    box-shadow: 8px 8px 8px #7fb9c2;
+}
+
+th {
+    color: white;
+    background-color: #628ca6;
+    font-weight: 600;
+}
+
+caption {
+    background-color: #7fb9c2;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+table {
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+td, th, tfoot, caption {
+    padding: 5px;
+}
+
+table, td, th, tfoot, caption {
+    border: 1px solid white;
+}
+
+tfoot th{
+    font-size: .8em;
+    font-weight: normal;
+    background-color: #7fb9c2;
+}
+
+tr {
+    background-color: #e7f0ed;
+}
+
+tr:nth-child(odd){
+    background-color: #e7ffed;
+}
+
+.highlight {
+    background-color: #628ca6;
+    color: white;
+}
+
