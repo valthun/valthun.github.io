@@ -38,16 +38,16 @@
     <main>
         <form>
             <label for="id">Full Name: </label>
-                <input id="fullname" type="text" spellcheck="false" minlength="5" pattern="[a-zA-Z]+" required>
+                <input id="fullname" type="text" spellcheck="false" pattern="[a-zA-Z] {5, }" required>
             
             <label for="email">email: </label>
                 <input id="email" type="email" spellcheck="false" placeholder="luke-t16@tatooine.com">
             
             <label for="phone">phone number: </label>
-                <input id="phone" type="tel" placeholder="310-867-5309" required>
+                <input id="phone" type="tel" placeholder="###-###-####" required>
             
             <label for="zip">zip code: </label> 
-                <input id="zip" type="number" required>
+                <input id="zip" type="number" placeholder="12345" required>
             
             <label for="date">ztorm date: </label>
                 <input id="date" type="date">
