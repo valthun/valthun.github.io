@@ -40,17 +40,25 @@ table {
     box-shadow: 5px 5px 8px #7fb9c2;
 }
 
-td, th, tfoot, caption {
+td, th, tfoot {
     padding: 5px;
 }
 
-table, td, th, tfoot, caption {
+table, td, th, tfoot {
     border: 1px solid #bbbbbb;
 }
 
-tfoot{
+tfoot th{
     font-size: .8em;
     font-weight: normal;
+    background-color: #7fb9c2;
+    color: black;
+}
+
+thead th{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
     background-color: #7fb9c2;
 }
 
