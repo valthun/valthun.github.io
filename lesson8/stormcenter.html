@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Home page for Plain Weather week 5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Plain Weather - Preston</title>
+    <link rel="stylesheet" type="text/css" href='css/normalize.css'>
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+</head>
+
+<body>
+    <a id="pancake">Reminder to all. Preston Pancakes in the Park! 9am Saturday at the city park pavillion. Rain or
+        Shine!</a>
+    <header>
+        <img src="images/weatherlogo.png" alt="logo" class="logo">
+        <div>
+            <H1>Plain Weather</H1>
+            <h4>Just the weather. PLAIN and simple</h4>
+        </div>
+
+    </header>
+    <nav class="navi">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-8.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form>
+            <label for="id">Full Name: 
+                <input id="fullname" type="text" spellcheck="false" minlength="5" pattern="[a-zA-Z]+" required>
+            </label>
+            <label for="email">email: 
+                <input id="email" type="email" spellcheck="false" placeholder="luke-t16@tatooine.com">
+            </label>
+            <label for="phone">phone number: 
+                <input id="phone" type="tel" placeholder="310-867-5309" required>
+            </label>
+            <label for="zip">zip code: 
+                <input id="zip" type="number" required>
+            </label>
+            <label for="date">ztorm date: 
+                <input id="date" type="date">
+            </label>
+            <label for="stormtype">storm type: 
+            <input id="stormtype" type="list" list="stormtypes">
+                <datalist id="stormtypes">
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                </datalist>
+            </label>
+            <label for="severity">storm severity (1-10): 
+                <input id="severity" type="range" htmlattrdefmin="1" htmlattrdemax="10">
+            </label>
+            <label for="region">Select Region:
+                <select id="region" type="list" name="regionlist">
+                    <datalist id="regionlist">
+                        <option value="Preston"></option>
+                        <option value="Fish Haven"></option>
+                        <option value="Soda Springs"></option>
+                    </datalist>
+                </select>
+            </label>
+            <label for="danger">user in-danger: </label>
+            <input id="yes" type="radio" value="yes">
+            <label for="yes">yes </label>
+            <input type="radio" value="no">
+            <label for="no">no </label>
+            <input type="radio" value="maybe">
+            <label for="maybe">maybe</label>
+            <label for="form">more information: 
+                <textarea id="form" rows="6" cols="50" spellcheck="true"></textarea>
+            </label>
+            <input type="submit">
+        </form>
+
+    </main>
+    <footer>
+
+        <p>&copy; <span id="copyyear"></span> Plain Weather | attributions | Jereme Skelton</p>
+        <p><span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span> <span
+                id="currentyear"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
