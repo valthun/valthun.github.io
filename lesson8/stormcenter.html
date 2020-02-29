@@ -38,7 +38,7 @@
     <main>
         <h2>Storm Center Reporting</h2>
         <form method="get">
-            
+
             <fieldset>
                 <legend>Contact Information</legend>
                 <label for="id">Full Name: </label>
@@ -54,7 +54,7 @@
                 <input id="zip" type="number" placeholder="12345" required>
             </fieldset>
 
-            
+
             <fieldset>
                 <legend>Stom Information</legend>
                 <label for="date">storm date: </label>
@@ -71,7 +71,7 @@
                 </datalist>
 
                 <label for="severity">storm severity (1-10): </label>
-                <input id="severity" type="range" htmlattrdefmin="1" htmlattrdemax="10" step="10">
+                <input id="severity" type="range" step="10">
 
                 <label for="region">Select Region: </label>
                 <input id="region" type="list" list="regionlist">
@@ -84,15 +84,15 @@
                 <label for="danger">user in-danger: </label>
                 <label for="yes">yes</label>
                 <input type="radio" id="yes" name="danger">
-                <lable for="no">no</lable>
+                <label for="no">no</label>
                 <input type="radio" id="no" name="danger">
-                <lable for="maybe">maybe</label>
-                    <input type="radio" id="maybe" name="danger">
+                <label for="maybe">maybe</label>
+                <input type="radio" id="maybe" name="danger">
 
-                    <label for="form">more information:</label>
-                    <textarea id="form" rows="6" cols="50" spellcheck="true"></textarea>
-                </fieldset>
-                <input class="button" type="submit" value="Report">
+                <label for="form">more information:</label>
+                <textarea id="form" rows="6" cols="50" spellcheck="true"></textarea>
+            </fieldset>
+            <input class="button" type="submit" value="Report">
 
         </form>
 
