@@ -41,32 +41,32 @@
 
             <fieldset class="contactinfo">
                 <legend>Contact Information</legend>
-
-                <label for="id">Full Name:
+                <div>
+                    <label for="id">Full Name:</label>
                     <input id="id" type="text" spellcheck="false" pattern="[a-zA-Z] {5, }" required>
-                </label>
-
-                <label for="email">email:
+                </div>
+                <div>
+                    <label for="email">email: </label>
                     <input id="email" type="email" spellcheck="false" placeholder="luke-t16@tatooine.com">
-                </label>
-
-                <label for="phone">phone number:
+                </div>
+                <div>
+                    <label for="phone">phone number: </label>
                     <input id="phone" type="tel" placeholder="###-###-####" required>
-                </label>
-
-                <label for="zip">zip code:
+                </div>
+                <div>
+                    <label for="zip">zip code: </label>
                     <input id="zip" type="number" placeholder="12345" required>
-                </label>
+                </div>
             </fieldset>
 
             <fieldset class="storminfo">
                 <legend>Stom Information</legend>
-
-                <label for="date">Storm Date:
+                <div>
+                    <label for="date">Storm Date: </label>
                     <input type="date" id="">
-                </label>
-
-                <label for="stormtype">Storm Type:
+                </div>
+                <div>
+                    <label for="stormtype">Storm Type: </label>
                     <input id="stormtype" list="stormtypes" placeholder="Select One">
                     <datalist id="stormtypes">
                         <option value="Flash Flood"></option>
@@ -75,9 +75,9 @@
                         <option value="Thunderstorm"></option>
                         <option value="Tornado"></option>
                     </datalist>
-                </label>
-
-                <label for="severity">Storm Severity (1-10):
+                </div>
+                <di>
+                    <label for="severity">Storm Severity (1-10): </label>
                     <input id="severity" type="range" min="1" max="10" value="5" step="1" list="ticks">
                     <datalist id="ticks">
                         <option value="0"></option>
@@ -92,30 +92,31 @@
                         <option value="9"></option>
                         <option value="10"></option>
                     </datalist>
-                </label>
-
-                <label for="region">Select Region:
-                    <input id="region" list="regionlist" name="region" placeholder="Select One">
-                    <datalist id="regionlist">
-                        <option value="Preston"></option>
-                        <option value="Fish Haven"></option>
-                        <option value="Soda Springs"></option>
-                    </datalist>
-                </label>
-
-                <label id="danger" name="danger">Are you in danger?
-                    <label for="yes">yes</label>
-                    <input type="radio" id="yes" name="danger" value="yes">
-                    <label for="no">no</label>
-                    <input type="radio" id="no" name="danger" value="no" checked>
-                    <label for="maybe">maybe</label>
-                    <input type="radio" id="maybe" value="maybe" name="danger">
-                </label>
-
-                <label class="freewrite" for="form">More information:
-                    <textarea id="form" rows="6" cols="50" spellcheck="true" placeholder="Type additional details"></textarea>
+                    </div>
+                    <div>
+                        <label for="region">Select Region: </label>
+                        <input id="region" list="regionlist" name="region" placeholder="Select One">
+                        <datalist id="regionlist">
+                            <option value="Preston"></option>
+                            <option value="Fish Haven"></option>
+                            <option value="Soda Springs"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label id="danger" name="danger">Are you in danger? </label>
+                        <label for="yes">yes</label>
+                        <input type="radio" id="yes" name="danger" value="yes">
+                        <label for="no">no</label>
+                        <input type="radio" id="no" name="danger" value="no" checked>
+                        <label for="maybe">maybe</label>
+                        <input type="radio" id="maybe" value="maybe" name="danger">
+                    </div>
             </fieldset>
-            </label>
+            <fieldset>
+                <legend>More Information</legend>
+                <textarea id="form" rows="6" cols="50" spellcheck="true"
+                    placeholder="Type additional details"></textarea>
+            </fieldset>
             <input class="button" type="submit" value="Report">
         </form>
 

@@ -237,15 +237,17 @@ fieldset {
 
 .storminfo {
     display: flex;
+    justify-content: center;
 }
 
 .contactinfo {
     display: flex;
+    justify-content: "center";
 }
 
 form {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 2;
 }
 
 legend {
