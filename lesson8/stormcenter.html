@@ -57,11 +57,11 @@
 
             <fieldset>
                 <legend>Stom Information</legend>
-                <label for="date">storm date: </label>
+                <label for="date">Storm Date: </label>
                 <input id="date" type="date">
 
-                <label for="stormtype">storm type: </label>
-                <input id="stormtype" list="stormtypes">
+                <label for="stormtype">Storm Yype: </label>
+                <input id="stormtype" type="select" list="stormtypes">
                 <datalist id="stormtypes">
                     <option value="Flash Flood"></option>
                     <option value="Hail"></option>
@@ -70,7 +70,7 @@
                     <option value="Tornado"></option>
                 </datalist>
 
-                <label for="severity">storm severity (1-10): </label>
+                <label for="severity">Storm Severity (1-10): </label>
                 <input id="severity" type="range" step="10">
 
                 <label for="region">Select Region: </label>
@@ -81,15 +81,15 @@
                     <option value="Soda Springs"></option>
                 </datalist>
 
-                <label for="danger">user in-danger: </label>
+                <label>Are you in danger? </label>
                 <label for="yes">yes</label>
-                <input type="radio" id="yes" name="danger">
+                <input type="radio" id="yes" name="danger" value="yes"> 
                 <label for="no">no</label>
-                <input type="radio" id="no" name="danger">
+                <input type="radio" id="no" name="danger" value="no" checked>
                 <label for="maybe">maybe</label>
-                <input type="radio" id="maybe" name="danger">
+                <input type="radio" id="maybe" value="maybe" name="danger">
 
-                <label for="form">more information:</label>
+                <label for="form">More information:</label>
                 <textarea id="form" rows="6" cols="50" spellcheck="true"></textarea>
             </fieldset>
             <input class="button" type="submit" value="Report">
