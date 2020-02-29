@@ -58,9 +58,9 @@
             <fieldset>
                 <legend>Stom Information</legend>
                 <label for="date">Storm Date: </label>
-                <input id="date" type="date">
+                <input type="date" id="">
 
-                <label for="stormtype">Storm Yype: </label>
+                <label for="stormtype">Storm Type: </label>
                 <input id="stormtype" list="stormtypes">
                 <datalist id="stormtypes">
                     <option value="Flash Flood"></option>
@@ -74,14 +74,14 @@
                 <input id="severity" type="range" step="10">
 
                 <label for="region">Select Region: </label>
-                <input id="region" list="regionlist">
+                <input id="region" list="regionlist" name="region">
                 <datalist id="regionlist">
                     <option value="Preston"></option>
                     <option value="Fish Haven"></option>
                     <option value="Soda Springs"></option>
                 </datalist>
 
-                <label>Are you in danger? </label>
+                <label id="danger" name="danger">Are you in danger? </label>
                 <label for="yes">yes</label>
                 <input type="radio" id="yes" name="danger" value="yes"> 
                 <label for="no">no</label>
