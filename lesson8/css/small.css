@@ -235,6 +235,19 @@ fieldset {
     border-radius: 9px;
 }
 
+.storminfo {
+    display: flex;
+}
+
+.contactinfo {
+    display: flex;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
 legend {
     color: #0c0910;
     padding: 5px;
@@ -246,6 +259,9 @@ legend {
     font-size: 1.5em;
     margin-top: 5px;
     border-radius: 5px;
+    background-color: #73a6ad;
 }
 
-
+.reporttitle {
+    padding: 5px;
+}
