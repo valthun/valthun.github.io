@@ -229,3 +229,23 @@ figure {
 form {
     padding: 5px;
 }
+
+fieldset {
+    border: 4px solid #689689;
+    border-radius: 9px;
+}
+
+legend {
+    color: #0c0910;
+    padding: 5px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.button {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5em;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
