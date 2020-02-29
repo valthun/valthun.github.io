@@ -242,12 +242,11 @@ fieldset {
 
 .contactinfo {
     display: flex;
-    justify-content: "center";
+    justify-content: center;
 }
 
 form {
     display: grid;
-    grid-template-columns: 2;
 }
 
 legend {
