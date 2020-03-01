@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston Home page for Plain Weather week 5">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Plain Weather - Preston</title>
+    <link rel="stylesheet" type="text/css" href='css/normalize.css'>
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+</head>
+
+<body>
+    <a id="pancake">Reminder to all. Preston Pancakes in the Park! 9am Saturday at the city park pavillion. Rain or
+        Shine!</a>
+    <header>
+        <img src="images/weatherlogo.png" alt="logo" class="logo">
+        <div>
+            <H1>Plain Weather</H1>
+            <h4>Just the weather. PLAIN and simple</h4>
+        </div>
+
+    </header>
+    <nav class="navi">
+        <ul>
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-8.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="reporttitle">Storm Center Reporting</h2>
+        <form method="get">
+
+            <fieldset class="contactinfo">
+                <legend>Contact Information</legend>
+                <div>
+                    <label for="id">Full Name:</label>
+                    <input id="id" type="text" spellcheck="false" pattern="[a-zA-Z] {5, }" required>
+                </div>
+                <div>
+                    <label for="email">email: </label>
+                    <input id="email" type="email" spellcheck="false" placeholder="luke-t16@tatooine.com">
+                </div>
+                <div>
+                    <label for="phone">phone number: </label>
+                    <input id="phone" type="tel" placeholder="###-###-####" required>
+                </div>
+                <div>
+                    <label for="zip">zip code: </label>
+                    <input id="zip" type="number" placeholder="12345" required>
+                </div>
+            </fieldset>
+
+            <fieldset class="storminfo">
+                <legend>Stom Information</legend>
+                <div>
+                    <label for="date">Storm Date: </label>
+                    <input type="date" id="date">
+                </div>
+                <div>
+                    <label for="stormtype">Storm Type: </label>
+                    <input id="stormtype" list="stormtypes" placeholder="Select One">
+                    <datalist id="stormtypes">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </div>
+                <div>
+                    <label for="severity">Storm Severity (1-10): </label>
+                    <input id="severity" type="range" min="1" max="10" value="5" step="1" list="ticks">
+                    <datalist id="ticks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                    </div>
+                    <div>
+                        <label for="region">Select Region: </label>
+                        <input id="region" list="regionlist" name="region" placeholder="Select One">
+                        <datalist id="regionlist">
+                            <option value="Preston"></option>
+                            <option value="Fish Haven"></option>
+                            <option value="Soda Springs"></option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label>Are you in danger? </label>
+                        <label for="yes">yes</label>
+                        <input type="radio" id="yes" name="danger" value="yes">
+                        <label for="no">no</label>
+                        <input type="radio" id="no" name="danger" value="no" checked>
+                        <label for="maybe">maybe</label>
+                        <input type="radio" id="maybe" value="maybe" name="danger">
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>More Information</legend>
+                <textarea id="form" rows="6" cols="50" spellcheck="true"
+                    placeholder="Type additional details"></textarea>
+            </fieldset>
+            <input class="button" type="submit" value="Report">
+        </form>
+
+    </main>
+    <footer>
+
+        <p>&copy; <span id="copyyear"></span> Plain Weather | attributions | Jereme Skelton</p>
+        <p><span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span> <span
+                id="currentyear"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/lazyload.js"></script>
+</body>
