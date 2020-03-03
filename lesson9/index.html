@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Plain Weather - Home</title>
+    <link rel="stylesheet" type="text/css" href='css/normalize.css'>
+    <link rel="stylesheet" type="text/css" href="css/small.css">
+    <link rel="stylesheet" type="text/css" href="css/medium.css">
+    <link rel="stylesheet" type="text/css" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/weatherlogo.png" alt="logo" class="logo">
+        <div>
+            <H1>Plain Weather</H1>
+            <h4>Just the weather. PLAIN and simple</h4>
+        </div>
+    </header>
+    <main>
+        <nav class="navi">
+            <ul>
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="preston-9.html">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery-9.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="towns"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyyear"></span> Plain Weather | attributions | Jereme Skelton</p>
+        <span id="weekday"></span>, <span id="currentday"></span> <span id="currentmonth"></span>
+        <span id="currentyear"></span></p>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/copyright.js"></script>
+    <script src="js/towninfo.js"></script>
+</body>
+
+</html>

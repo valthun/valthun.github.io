@@ -226,6 +226,10 @@ figure {
     padding-bottom: 2px;
 }
 
+figure img {
+    max-width: 100%;
+}
+
 form {
     padding: 5px;
 }

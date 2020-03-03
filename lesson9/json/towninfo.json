@@ -1,0 +1,25 @@
+{
+    "towns": [
+        {
+            "town": "Preston",
+            "motto": "",
+            "average rainfall": "",
+            "population": "",
+            "founded": ""
+        },
+        {
+            "town": "Soda Springs",
+            "motto": "",
+            "average rainfall": "",
+            "population": "",
+            "founded": ""
+        },
+        {
+            "town": "Fish Haven",
+            "motto": "",
+            "average rainfall": "",
+            "population": "",
+            "founded": ""
+        }
+    ]
+}
