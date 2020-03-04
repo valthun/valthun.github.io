@@ -13,6 +13,8 @@ fetch(requestURL)
       
       let towns = document.createElement('section');
       let h2 = document.createElement('h2');
+      let motto = document.createElement('p');
+      let 
 
       h2.textContent = towninfo[i].town;
 

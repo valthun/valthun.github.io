@@ -3,21 +3,21 @@
         {
             "town": "Preston",
             "motto": "Where the City Meets the Mountains!",
-            "average rainfall": "19 inches",
+            "rainfall": "19 inches",
             "population": "1900",
             "founded": "5354"
         },
         {
             "town": "Soda Springs",
             "motto": "",
-            "average rainfall": "",
+            "rainfall": "",
             "population": "",
             "founded": ""
         },
         {
             "town": "Fish Haven",
             "motto": "",
-            "average rainfall": "",
+            "rainfall": "",
             "population": "",
             "founded": ""
         }
