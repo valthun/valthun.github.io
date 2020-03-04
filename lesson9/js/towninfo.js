@@ -9,16 +9,16 @@ fetch(requestURL)
     
     const towninfo = jsonObject['towninfo'];
 
-    for (let i = 0; i < towns.length; i++ ) {
+    for (let i = 0; i < towninfo.length; i++ ) {
       
       let towns = document.createElement('section');
       let h2 = document.createElement('h2');
 
-      h2.textContent = "City: " + towninfo[i].town;
+      h2.textContent = towninfo[i].town;
 
 
       towns.appendChild(h2);
 
-      document.querySelector('div.cards').appendChild(card);
+      document.querySelector('div.towns').appendChild(towns);
     }
   });
