@@ -16,17 +16,21 @@ fetch(requestURL)
       let founded = document.createElement('p');
       let motto = document.createElement('p');
       let rainfall = document.createElement('p');
+      let population = document.createElement('p');
 
       h2.textContent = towninfo[i].town;
-      founded.textContent = towninfo[i].founded;
       motto.textContent = towninfo[i].motto;
+      founded.textContent = "founded " + towninfo[i].founded;
+      population.textContent = "population " + towninfo[i].population;      
+      rainfall.textContent = "average rainfall " + towninfo[i].rainfall;
 
-      rainfall.textContent = towninfo[i].rainfall;
 
 
       towns.appendChild(h2);
-      towns.appendChild(founded);
       towns.appendChild(motto);
+      towns.appendChild(founded);
+      towns.appendChild(population);
+      towns.appendChild(rainfall);
 
       document.querySelector('div.towns').appendChild(towns);
     }
