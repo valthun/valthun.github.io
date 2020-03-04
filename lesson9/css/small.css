@@ -268,3 +268,9 @@ legend {
 .reporttitle {
     padding: 5px;
 }
+
+section {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 2px solid #73a6ad;
+}
