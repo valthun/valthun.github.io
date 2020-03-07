@@ -10,11 +10,11 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
 
     for (let i = 0; i < towns.length; i++ ) {
-      
+      if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
       let towninfo = document.createElement('section');
       let h2 = document.createElement('h2');
       let yearFounded = document.createElement('p');
-      let motto = document.createElement('p');
+      let motto = document.createElement('h3');
       let averageRainfall = document.createElement('p');
       let currentPopulation = document.createElement('p');
 
@@ -33,5 +33,5 @@ fetch(requestURL)
       towninfo.appendChild(averageRainfall);
 
       document.querySelector('div.towninfo').appendChild(towninfo);
-    }
+    }}
   });

@@ -273,4 +273,5 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     border: 2px solid #73a6ad;
+    text-align: center;
 }
