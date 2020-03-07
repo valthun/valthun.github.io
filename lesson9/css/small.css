@@ -270,9 +270,8 @@ legend {
 }
 
 .towninfo {
-    display: grid;
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .towninfo section {
@@ -281,6 +280,21 @@ legend {
     background-color: #fbf5f3;
     box-shadow: 0px 0px 10px #73a6ad;
     border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+.info {
+    text-align: center;
+}
+
+.towninfo img{
+    width: 95%;
+    box-shadow: 0px 0px 10px;
+    margin: 5px;
+    float: left;
 }
 
 .towninfo h1, h2 {

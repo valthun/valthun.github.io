@@ -13,10 +13,15 @@ fetch(requestURL)
       if (towns[i].name == "Fish Haven" || towns[i].name == "Preston" || towns[i].name == "Soda Springs") {
       let towninfo = document.createElement('section');
       let h2 = document.createElement('h2');
+      let div = document.createElement('div');
       let yearFounded = document.createElement('p');
       let motto = document.createElement('h3');
       let averageRainfall = document.createElement('p');
       let currentPopulation = document.createElement('p');
+      let image = document.createElement('img')
+      div.classList.add('info')
+
+      var photo = 'images/' + towns[i].photo
 
       h2.textContent = towns[i].name;
       motto.textContent = towns[i].motto;
@@ -24,15 +29,17 @@ fetch(requestURL)
       currentPopulation.textContent = "population " + towns[i].currentPopulation;      
       averageRainfall.textContent = "average rainfall " + towns[i].averageRainfall;
 
-      /*image.setAttribute('src', "images/" + towns[i].photo);
-      image.setAttribute('alt', h2.textContent + " image ");*/
+      image.setAttribute('src', photo);
+      image.setAttribute('alt', h2.textContent + " photo ");
+  
 
-      towninfo.appendChild(h2);
-      towninfo.appendChild(motto);
-      towninfo.appendChild(yearFounded);
-      towninfo.appendChild(currentPopulation);
-      towninfo.appendChild(averageRainfall);
-      /*towninfo.appendChild(image);*/
+      div.appendChild(h2);
+      div.appendChild(motto);
+      div.appendChild(yearFounded);
+      div.appendChild(currentPopulation);
+      div.appendChild(averageRainfall);
+      towninfo.appendChild(image);
+      towninfo.appendChild(div);
 
       document.querySelector('div.towninfo').appendChild(towninfo);
     }}
