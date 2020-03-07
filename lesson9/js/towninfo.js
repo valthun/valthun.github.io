@@ -24,15 +24,15 @@ fetch(requestURL)
       currentPopulation.textContent = "population " + towns[i].currentPopulation;      
       averageRainfall.textContent = "average rainfall " + towns[i].averageRainfall;
 
-      image.setAttribute('src', "images/" + towns[i].photo);
-      image.setAttribute('alt', h2.textContent + " image ");
+      /*image.setAttribute('src', "images/" + towns[i].photo);
+      image.setAttribute('alt', h2.textContent + " image ");*/
 
       towninfo.appendChild(h2);
       towninfo.appendChild(motto);
       towninfo.appendChild(yearFounded);
       towninfo.appendChild(currentPopulation);
       towninfo.appendChild(averageRainfall);
-      towninfo.appendChild(image);
+      /*towninfo.appendChild(image);*/
 
       document.querySelector('div.towninfo').appendChild(towninfo);
     }}
