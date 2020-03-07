@@ -1,4 +1,4 @@
-const requestURL = "https://valthun.github.io/lesson9/json/towninfo.json";
+const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
 fetch(requestURL)
   .then(function (response) {
@@ -7,31 +7,31 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     
-    const towninfo = jsonObject['towninfo'];
+    const towns = jsonObject['towns'];
 
-    for (let i = 0; i < towninfo.length; i++ ) {
+    for (let i = 0; i < towns.length; i++ ) {
       
-      let towns = document.createElement('section');
+      let towninfo = document.createElement('section');
       let h2 = document.createElement('h2');
-      let founded = document.createElement('p');
+      let yearFounded = document.createElement('p');
       let motto = document.createElement('p');
-      let rainfall = document.createElement('p');
-      let population = document.createElement('p');
+      let averageRainfall = document.createElement('p');
+      let currentPopulation = document.createElement('p');
 
-      h2.textContent = towninfo[i].town;
-      motto.textContent = towninfo[i].motto;
-      founded.textContent = "founded " + towninfo[i].founded;
-      population.textContent = "population " + towninfo[i].population;      
-      rainfall.textContent = "average rainfall " + towninfo[i].rainfall;
+      h2.textContent = towns[i].name;
+      motto.textContent = towns[i].motto;
+      yearFounded.textContent = "founded " + towns[i].yearFounded;
+      currentPopulation.textContent = "population " + towns[i].currentPopulation;      
+      averageRainfall.textContent = "average rainfall " + towns[i].averageRainfall;
 
 
 
-      towns.appendChild(h2);
-      towns.appendChild(motto);
-      towns.appendChild(founded);
-      towns.appendChild(population);
-      towns.appendChild(rainfall);
+      towninfo.appendChild(h2);
+      towninfo.appendChild(motto);
+      towninfo.appendChild(yearFounded);
+      towninfo.appendChild(currentPopulation);
+      towninfo.appendChild(averageRainfall);
 
-      document.querySelector('div.towns').appendChild(towns);
+      document.querySelector('div.towninfo').appendChild(towninfo);
     }
   });
