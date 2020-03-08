@@ -61,8 +61,13 @@
         grid-template-columns: 1fr 1fr;
     }
 
-   .towninfo {
-        grid-template-rows: 1fr 1fr 1fr;
+    .towninfo section {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .towninfo section:nth-child(odd) {
+        flex-direction: row;
     }
  
 }

@@ -27,4 +27,13 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .towninfo section {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .info {
+        margin: 0 auto;
+    }
+
 }
