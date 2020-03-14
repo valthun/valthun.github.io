@@ -25,9 +25,9 @@ fetch(requestURL)
 
       h2.textContent = towns[i].name;
       motto.textContent = towns[i].motto;
-      yearFounded.textContent = "founded " + towns[i].yearFounded;
-      currentPopulation.textContent = "population " + towns[i].currentPopulation;      
-      averageRainfall.textContent = "average rainfall " + towns[i].averageRainfall;
+      yearFounded.textContent = "Founded: " + towns[i].yearFounded;
+      currentPopulation.textContent = "Population: " + towns[i].currentPopulation;      
+      averageRainfall.textContent = "Average rainfall: " + towns[i].averageRainfall;
 
       image.setAttribute('src', photo);
       image.setAttribute('alt', h2.textContent + " photo ");

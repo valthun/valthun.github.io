@@ -61,12 +61,16 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .info{
+        width: 50%;
+    }
+
     .towninfo section {
         display: flex;
         flex-direction: row-reverse;
     }
 
-    .towninfo section:nth-child(odd) {
+    .towninfo section:nth-child(even) {
         flex-direction: row;
     }
  

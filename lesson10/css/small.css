@@ -278,18 +278,15 @@ legend {
 .towninfo section {
     border: 2px solid #73a6ad;
     margin: 5px;
-    background-color: #689689;
+    background-color: #e9eda4;
     box-shadow: 0px 0px 10px #73a6ad;
     border-radius: 5px;
     text-align: center;
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-.towninfo section:nth-child(odd) {
-    flex-direction: row-reverse;
-}
 
 .info {
     text-align: center;
@@ -308,6 +305,19 @@ h2 {
     padding: 5px;
 }
 
-.forecast th td{
-    border: 1px, solid, white;
+caption, th, tr{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+tr, th{
+    font-size: 1.3em;
+}
+
+caption{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.forcast {
+    text-align: center;
 }
