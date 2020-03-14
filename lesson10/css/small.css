@@ -304,6 +304,7 @@ caption, th, tr{
 caption{
     font-size: 2.5em;
     font-weight: 800;
+    padding: 3px;
 }
 
 td {
@@ -314,23 +315,22 @@ td {
 th {
     background-color: #73a6ad;
     font-size: 1.8em;
+    padding: 3px;
 }
 
 th, td{
-    border: 1px solid white;
+    border: 3px solid #0c0910;
     width: 150px;
 }
 
-table {
-    border-collapse: collapse;
-    margin: 0 auto;
+tbody{
+    box-shadow: 0px 0px 10px #0c0910;
 }
 
 .forcast {
-    border-color: #0c0910;
     margin: 0 auto;
-    padding: 8px;
+    padding: 10px;
     background-color: #c0c5c1;
     display: none;
-    line-height: 3em;
+    border-collapse: collapse;
 }
