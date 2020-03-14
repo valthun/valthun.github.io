@@ -129,15 +129,6 @@ body {
     background-color: #73a6ad;
 }
 
-.forcast {
-    border-color: #0c0910;
-    margin: auto;
-    padding: 8px;
-    background-color: #73a6ad;
-    display: none;
-    line-height: 3em;
-}
-
 .hero {
     position: relative;
 }
@@ -173,6 +164,7 @@ body {
 .article {
     text-align: justify;
     margin: 5px;
+    padding: 5px;
 }
 
 .article-img {
@@ -309,15 +301,36 @@ caption, th, tr{
     font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
-tr, th{
-    font-size: 1.3em;
-}
-
 caption{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: 800;
 }
 
+td {
+    background-color: #e9eda4;
+    font-size: 1.2em;
+}
+
+th {
+    background-color: #73a6ad;
+    font-size: 1.8em;
+}
+
+th, td{
+    border: 1px solid white;
+    width: 150px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
 .forcast {
-    text-align: center;
+    border-color: #0c0910;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: #c0c5c1;
+    display: none;
+    line-height: 3em;
 }
