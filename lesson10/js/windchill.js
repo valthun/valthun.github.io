@@ -11,8 +11,8 @@ fetch(apiURL1)
         document.getElementById('speed').textContent = jsObject.wind.speed;
         document.getElementById('humidity').textContent = jsObject.main.humidity;
 
-        let t = jsObject.main.temp;
-        let s = jsObject.main.speed;
+        var t = parseFloat(document.getElementById("temp").textContent);
+        var s = parseFloat(document.getElementById("speed").textContent);
         if (t <= 50 && s >= 3) {
             var c = windChill(t, s);
             document.getElementById('chill').textContent = c;
