@@ -53,18 +53,41 @@
                 <p>Wind Speed: <span id="speed"></span> mph</p>
             </section>
         </div>
-        <div class="forcast">
-            <h2>5 Day Forcast</h2>
-            <img id="sat" src="images/forcast_saturday.png" alt="saturday">
-            <img id="sun" src="images/forcast_sunday.png" alt="sunday">
-            <img id="mon" src="images/forcast_monday.png" alt="monday">
-            <img id="tue" src="images/forcast_tuesday.png" alt="tuesday">
-            <img id="wed" src="images/forcast_wed.png" alt="wednesday">
-            <!--
-            <img id="thur" src="images/forcast_thursday.png" alt="thursday">
-            <img id="fri" src="images/forcast_friday.png" alt="friday">
-            -->
-        </div>
+        <table class="forcast">
+            <caption>5 Day Forcast</caption>
+            <tbody>
+                <tr>
+                    <th><span id="weekday1"></span></th>
+                    <th><span id="weekday2"></span></th>
+                    <th><span id="weekday3"></span></th>
+                    <th><span id="weekday4"></span></th>
+                    <th><span id="weekday5"></span></th>
+                </tr>
+                <tr>
+                    <td>
+                        <p><span id="fore1"></span>&#176;F</p>
+                        <span id="imagesrc1"></span> &nbsp; <img src="" alt="" id="icon1">
+                    </td>
+                    <td>
+                        <p><span id="fore2"></span>&#176;F</p>
+                        <span id="imagesrc2"></span> &nbsp; <img src="" alt="" id="icon2">
+                    </td>
+                    <td>
+                        <p><span id="fore3"></span>&#176;F</p>
+                        <span id="imagesrc3"></span> &nbsp; <img src="" alt="" id="icon3">
+                    </td>
+                    <td>
+                        <p><span id="fore4"></span>&#176;F</p>
+                        <span id="imagesrc4"></span> &nbsp; <img src="" alt="" id="icon4">
+                    </td>
+                    <td>
+                        <p><span id="fore5"></span>&#176;F</p>
+                        <span id="imagesrc5"></span> &nbsp; <img src="" alt="" id="icon5">
+                    </td>
+                </tr>
+            </tbody>
+            
+        </table>
         <article class="article">
             <h2>Heavy Rains</h2>
             <p>by Jereme Skelton</p>

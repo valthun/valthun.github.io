@@ -34,18 +34,58 @@ fetch(apiURL1)
 
 //forecast    
 
-/*const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=81785cac2327d15c890f8bdde7a8bf16';
+const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=81785cac2327d15c890f8bdde7a8bf16';
 
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         console.log(jsObject);
 
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
+        document.getElementById('fore1').textContent = jsObject.list[0].main.temp_max;
+        document.getElementById('fore2').textContent = jsObject.list[1].main.temp_max;
+        document.getElementById('fore3').textContent = jsObject.list[2].main.temp_max;
+        document.getElementById('fore4').textContent = jsObject.list[3].main.temp_max;
+        document.getElementById('fore5').textContent = jsObject.list[4].main.temp_max;
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.weather[0].description; // note how we reference the weather array
-        document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-        document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
-    });*/
+
+        const imagesrc1 = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+        const desc1 = jsObject.list[0].weather[0].description;
+        document.getElementById('icon1').setAttribute('src', imagesrc1);
+        document.getElementById('icon1').setAttribute('alt', desc1);
+
+        const imagesrc2 = 'https://openweathermap.org/img/w/' + jsObject.list[1].weather[0].icon + '.png';
+        const desc2 = jsObject.list[1].weather[0].description;
+        document.getElementById('icon2').setAttribute('src', imagesrc2);
+        document.getElementById('icon2').setAttribute('alt', desc2);
+
+        const imagesrc3 = 'https://openweathermap.org/img/w/' + jsObject.list[2].weather[0].icon + '.png';
+        const desc3 = jsObject.list[2].weather[0].description;
+        document.getElementById('icon3').setAttribute('src', imagesrc3);
+        document.getElementById('icon3').setAttribute('alt', desc3);
+
+        const imagesrc4 = 'https://openweathermap.org/img/w/' + jsObject.list[3].weather[0].icon + '.png';
+        const desc4 = jsObject.list[3].weather[0].description;
+        document.getElementById('icon4').setAttribute('src', imagesrc4);
+        document.getElementById('icon4').setAttribute('alt', desc4);
+
+        const imagesrc5 = 'https://openweathermap.org/img/w/' + jsObject.list[4].weather[0].icon + '.png';
+        const desc5 = jsObject.list[4].weather[0].description;
+        document.getElementById('icon5').setAttribute('src', imagesrc5);
+        document.getElementById('icon5').setAttribute('alt', desc5);
+    });
+
+    //5 days
+
+
+    var day = new Date().getDate();
+    var week = new Array(7);
+    week[0] = "Sunday";
+    week[1] = "Monday";
+    week[2] = "Tuesday";
+    week[3] = "Wednsday";
+    week[4] = "Thursday";
+    week[5] = "Friday";
+    week[6] = "Saturday";
+    var we = week[m.getDay()];
+    
+    document.getElementById('weekday1').innerHTML=we;
