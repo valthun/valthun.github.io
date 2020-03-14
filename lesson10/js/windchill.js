@@ -41,14 +41,18 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
 
-        document.getElementById('fore1').textContent = jsObject.list[0].main.temp_max;
-        document.getElementById('fore2').textContent = jsObject.list[1].main.temp_max;
-        document.getElementById('fore3').textContent = jsObject.list[2].main.temp_max;
-        document.getElementById('fore4').textContent = jsObject.list[3].main.temp_max;
-        document.getElementById('fore5').textContent = jsObject.list[4].main.temp_max;
+        const fiveday = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
+        console.log(fiveday);
+
+        for (let i=0; i<fiveday.length; i++) {
+            document.getElementById('fore1').textContent = fiveday[i].main.temp;
+
+        }
 
 
-        const imagesrc1 = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
+
+
+        /*const imagesrc1 = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
         const desc1 = jsObject.list[0].weather[0].description;
         document.getElementById('icon1').setAttribute('src', imagesrc1);
         document.getElementById('icon1').setAttribute('alt', desc1);
@@ -71,7 +75,7 @@ fetch(apiURL)
         const imagesrc5 = 'https://openweathermap.org/img/w/' + jsObject.list[4].weather[0].icon + '.png';
         const desc5 = jsObject.list[4].weather[0].description;
         document.getElementById('icon5').setAttribute('src', imagesrc5);
-        document.getElementById('icon5').setAttribute('alt', desc5);
+        document.getElementById('icon5').setAttribute('alt', desc5);*/
     });
 
     //5 days
