@@ -65,7 +65,6 @@ fetch(apiURL)
             week[5] = "Fri";
             week[6] = "Sat";
             var we = week[day.getDay()];
-            console.log(day)
 
             document.getElementById('weekday1').innerHTML = we;
             document.getElementById('weekday2').innerHTML = we;
