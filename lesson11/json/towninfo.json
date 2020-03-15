@@ -1,0 +1,25 @@
+{
+    "towninfo": [
+        {
+            "town": "Preston",
+            "motto": "Where the City Meets the Mountains!",
+            "rainfall": "19 inches",
+            "population": "5354",
+            "founded": "1900"
+        },
+        {
+            "town": "Soda Springs",
+            "motto": "The Outdoors at Your Front Door",
+            "rainfall": "16 inches",
+            "population": "3038",
+            "founded": "1870"
+        },
+        {
+            "town": "Fish Haven",
+            "motto": "",
+            "rainfall": "12 inches",
+            "population": "213",
+            "founded": "1864"
+        }
+    ]
+}
