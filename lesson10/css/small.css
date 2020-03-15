@@ -327,6 +327,12 @@ tbody{
     box-shadow: 0px 0px 10px #0c0910;
 }
 
+table {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .forcast {
     margin: 0 auto;
     padding: 10px;
