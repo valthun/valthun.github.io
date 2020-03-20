@@ -59,9 +59,14 @@ footer {
     margin: 0 auto;
 }
 
+/* 
+Navigation section
+*/
+
 nav {
     width: 100%;
     background-color: #73a6ad;
+    text-align: center;
 }
 
 nav ul {
@@ -75,10 +80,6 @@ nav a {
     color: #0c0910;
 }
 
-nav {
-    text-align: center;
-}
-
 nav li {
     display: none;
 }
@@ -89,7 +90,6 @@ nav li:first-child {
 
 nav li a {
     display: block;
-    text-align: center;
     padding: .5em;
 }
 
@@ -106,6 +106,10 @@ main {
     max-width: 500px;
     margin: auto;
 }
+
+/* 
+Body stuff
+*/
 
 main h2 {
     font-size: 1.8em;
@@ -169,20 +173,21 @@ body {
 
 .article-img {
     width: 100%;
+    padding: 5px;
 }
 
 .contact {
     text-align: center;
-    line-height: .5em;
     background-color: #73a6ad;
     margin: 0;
+    padding: 0px;
 }
 
 
 .contact iframe {
     display: inline-block;
-    width: 425px;
-    margin: 8px auto;
+    width: 40%;
+    margin: 0 auto;
 }
 
 #pancake {
