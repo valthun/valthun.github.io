@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@400;700&family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+/*font-family: 'Josefin Sans', sans-serif;
+font-family: 'Gentium Book Basic', serif;*/
+
+//Body
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $fontfamily1;
+    color: $color1;
+}
+
+body{
+    text-align: center;
+    background-color: $color4;
+}
+
+p {
+    font-family: $fontfamily2;
+}
+
+header, nav, footer{
+    margin: 0;
+    padding: 1px;
+}
+
+//Header
+
+header, footer {
+    background-color: $color5;
+}
+
+header h1 {
+    padding: .2em;
+}
+
+//Nav
+
+.activemenu label{
+    font-size: 3em;
+}
+
+.activemenu {
+    background-color: $color2;
+    font-family: $fontfamily1;
+    color: $color3;
+    cursor:pointer;
+}
+.activemenu ul {
+    list-style: none;
+}
+
+.activemenu a {
+    display: block;
+    padding: .3em;
+    text-decoration: none;
+    color: $color3;
+}
+
+#active {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* toggle */
+
+input:checked ~ .menu-content {
+    max-height: 100%;
+}

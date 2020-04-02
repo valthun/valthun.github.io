@@ -1,4 +1,8 @@
 @import "normalize";
+@import "palette";
+@import "variables";
+@import "small";
 
-@import "pallet";
-
+@media only screen and (min-width: 600px) {
+    @import "medium";
+}
