@@ -36,6 +36,22 @@ header h1 {
 
 //Nav
 
+.activemenu li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+#menu {
+    font-size: 1.5em;
+}
+
+.activemenu li:first-child {
+    display: block;
+}
+
 .activemenu label{
     font-size: 3em;
 }
@@ -44,26 +60,47 @@ header h1 {
     background-color: $color2;
     font-family: $fontfamily1;
     color: $color3;
-    cursor:pointer;
 }
+
 .activemenu ul {
     list-style: none;
 }
 
 .activemenu a {
-    display: block;
-    padding: .3em;
+    padding: .5em;
     text-decoration: none;
     color: $color3;
 }
 
-#active {
+.active {
     font-weight: bold;
     font-size: 1.5em;
 }
 
-/* toggle */
+//Weather
 
-input:checked ~ .menu-content {
-    max-height: 100%;
+.currentWeather{
+    background-color: $color5;
+    font-family: $fontfamily1;
+    margin: 0;
+    padding: .5px
+}
+
+.currentWeather ul{
+    list-style: none;
+}
+
+.currentWeather li{
+    display: inline-block;
+}
+
+#weather{
+    font-weight: bold;
+}
+
+//Footer
+
+footer a {
+    text-decoration: none;
+    color: $color3;
 }

@@ -13,21 +13,34 @@
     </header>
     <nav class="activemenu">
         <ul>
-            <li id="menu"><a href="#">Menu</a></li>
-            <li id="active"><a href="#">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()" id="menu">&#9776;</a></li>
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="adventures.html">Adventures</a></li>
             <li><a href="guides.html">Guides</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="currentWeather">
+        <ul>
+            <li id="weather">Current Weather |</li>
+            <li>Temp: <span id="temp"></span> &#176;F |</li>
+            <li>Looks Like: <span id="looks"> </span> |</li>
+            <li>Wind Speed: <span id="speed"></span> mph</li>
+
+        </ul>
+    </div>
     <main>
         <h1>Come Paddle With Us</h1>
         <p>We have the best guides on the Salmon River</p>
     </main>
     <footer>
-        <h5>Copyright | Jereme Skelton</h5>
+        <h5>&copy; <span id="copyyear"> </span> Salmon River Adventures | Jereme Skelton | <a href="contactus.html">Contact Us</a></h5>
+        <p>Weather information provided by <a href="https://openweathermap.org" target="_blank">openweathermap.org</a></p>
     </footer>
    
 </body>
+<script src="js/copyright.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/weather.js"></script>
 </html>

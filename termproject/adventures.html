@@ -15,19 +15,31 @@
         <ul>
             <li id="menu"><a href="#">Menu</a></li>
             <li><a href="index.html">Home</a></li>
-            <li id="active"><a href="#">Adventures</a></li>
+            <li><a href="#" class="active">Adventures</a></li>
             <li><a href="guides.html">Guides</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="currentWeather">
+        <ul>
+            <li id="weather">Current Weather |</li>
+            <li>Temp: <span id="temp"></span> &#176;F |</li>
+            <li>Looks Like: <span id="looks"> </span> |</li>
+            <li>Wind Speed: <span id="speed"></span> mph</li>
+
+        </ul>
+    </div>
     <main>
         <h1>Come Paddle With Us</h1>
         <p>We have the best guides on the Salmon River</p>
     </main>
     <footer>
-        <h5>Copyright | Jereme Skelton</h5>
+        <h5>&copy; <span id="copyyear"> </span> Salmon River Adventures | Jereme Skelton | <a href="contactus.html">Contact Us</a></h5>
     </footer>
    
 </body>
+<script src="js/copyright.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/weather.js"></script>
 </html>

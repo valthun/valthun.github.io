@@ -372,6 +372,22 @@ header h1 {
   padding: .2em;
 }
 
+.activemenu li {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+#menu {
+  font-size: 1.5em;
+}
+
+.activemenu li:first-child {
+  display: block;
+}
+
 .activemenu label {
   font-size: 3em;
 }
@@ -380,7 +396,6 @@ header h1 {
   background-color: #19647e;
   font-family: "Josefin Sans", sans-serif;
   color: #c7ffda;
-  cursor: pointer;
 }
 
 .activemenu ul {
@@ -388,20 +403,38 @@ header h1 {
 }
 
 .activemenu a {
-  display: block;
-  padding: .3em;
+  padding: .5em;
   text-decoration: none;
   color: #c7ffda;
 }
 
-#active {
+.active {
   font-weight: bold;
   font-size: 1.5em;
 }
 
-/* toggle */
-input:checked ~ .menu-content {
-  max-height: 100%;
+.currentWeather {
+  background-color: #7d8ca3;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: .5px;
+}
+
+.currentWeather ul {
+  list-style: none;
+}
+
+.currentWeather li {
+  display: inline-block;
+}
+
+#weather {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c7ffda;
 }
 
 @media only screen and (min-width: 600px) {

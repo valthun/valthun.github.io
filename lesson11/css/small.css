@@ -75,6 +75,10 @@ nav ul {
     padding: 0;
 }
 
+.menu {
+    font-size: 10em;
+}
+
 nav a {
     text-decoration: none;
     color: #0c0910;
