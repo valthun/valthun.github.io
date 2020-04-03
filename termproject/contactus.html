@@ -30,8 +30,25 @@
         </ul>
     </div>
     <main>
-        <h1>Come Paddle With Us</h1>
-        <p>We have the best guides on the Salmon River</p>
+        <h1>Have a question? Ask it here.</h1>
+        <p>We will get an answer within 2 busines days.</p>
+        <form>
+            <fieldset class="contact">
+                <div>
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" spellcheck="false" pattern="[a-zA-Z] {5, }" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" spellcheck="false" placeholder="oarmaster@salriver.com">
+                </div>
+                <div>
+                    <p>Question: </p>
+                    <textarea id="question" rows="5" columns="60" spellcheck="true"></textarea>
+                </div>
+                <input class="button" type="submit" value="Aske Me">
+            </fieldset>
+        </form>
     </main>
     <footer>
         <h5>&copy; <span id="copyyear"> </span> Salmon River Adventures | Jereme Skelton | <a
