@@ -7,5 +7,5 @@ fetch(apiURL)
 
         document.getElementById('temp').textContent = jsObject.main.feels_like;
         document.getElementById('looks').textContent = jsObject.weather[0].description;
-        document.getElementById('speed').textContent = jsObject.wind.speed;
+        
     });
