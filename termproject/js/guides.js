@@ -9,7 +9,7 @@ fetch(guideURL)
 
         for (let i = 0; i < guides.length; i++) {
 
-            let card = document.createElement('section')
+            let pros = document.createElement('section')
             let name = document.createElement('h3');
             let bio = document.createElement('p');
             let cert = document.createElement('p');
@@ -18,10 +18,10 @@ fetch(guideURL)
             bio.textContent = "Bio: " + guides[i].bio;
             cert.textContent = "Certifications: " + guides[i].certs;
 
-            card.appendChild(name);
-            card.appendChild(bio);
-            card.appendChild(cert);
+            pros.appendChild(name);
+            pros.appendChild(bio);
+            pros.appendChild(cert);
 
-            document.querySelector('div.guides').appendChild(card);
+            document.querySelector('div.guides').appendChild(pros);
         }
     });
