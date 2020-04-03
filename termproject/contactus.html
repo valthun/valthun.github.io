@@ -13,14 +13,20 @@
     </header>
     <nav class="activemenu">
         <ul>
-            <li id="menu"><a href="#">Menu</a></li>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#" onclick="toggleMenu()" id="menu">&#9776;</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="adventures.html">Adventures</a></li>
             <li><a href="guides.html">Guides</a></li>
             <li><a href="reservations.html">Reservations</a></li>
             <li><a href="#" class="active">Contact Us</a></li>
         </ul>
     </nav>
+    <div class="currentWeather">
+        <ul>
+            <li id="weather">Current Weather |</li>
+            <li>Temp: <span id="temp"></span> &#176;F |</li>
+            <li>Looks Like: <span id="looks"> </span></li>
+        </ul>
     <main>
         <h1>Come Paddle With Us</h1>
         <p>We have the best guides on the Salmon River</p>
@@ -31,4 +37,6 @@
    
 </body>
 <script src="js/copyright.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/weather.js"></script>
 </html>
