@@ -3,6 +3,10 @@
 @import "variables";
 @import "small";
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 450px) {
     @import "medium";
+}
+
+@media only screen and (min-width: 700px){
+    @import "large";
 }

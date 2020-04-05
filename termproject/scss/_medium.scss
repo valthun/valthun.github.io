@@ -1,4 +1,19 @@
 
-/*nav li {
-    display: inline-block;
-}*/
+body {
+    max-width: 800px;
+    margin:0 auto;
+}
+
+.activemenu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.activemenu li {
+    display: block;
+}
+
+.activemenu li:first-child{
+    display: none;
+}

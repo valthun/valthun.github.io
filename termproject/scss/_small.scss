@@ -36,6 +36,9 @@ footer {
     padding: 1px;
 }
 
+img {
+    max-width: 100%;
+}
 //Header
 
 header,
@@ -136,7 +139,7 @@ footer a {
 .question {
     background-color: $color3;
     margin: 10px auto;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 //guides page
@@ -204,7 +207,7 @@ h4 {
 .bookit {
     background-color: $color3;
     margin: 10px auto;
-    max-width: 500px;
+    max-width: 300px;
 }
 
 #adult {
