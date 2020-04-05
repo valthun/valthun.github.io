@@ -5,28 +5,41 @@ font-family: 'Gentium Book Basic', serif;*/
 
 //Body
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $fontfamily1;
     color: $color1;
 }
 
-body{
+body {
     text-align: center;
     background-color: $color4;
+}
+
+main {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 p {
     font-family: $fontfamily2;
 }
 
-header, nav, footer{
+header,
+nav,
+footer {
     margin: 0;
     padding: 1px;
 }
 
 //Header
 
-header, footer {
+header,
+footer {
     background-color: $color5;
 }
 
@@ -52,7 +65,7 @@ header h1 {
     display: block;
 }
 
-.activemenu label{
+.activemenu label {
     font-size: 3em;
 }
 
@@ -72,6 +85,10 @@ header h1 {
     color: $color3;
 }
 
+.activemenu a:hover {
+    font-size: 1.5em;
+}
+
 .active {
     font-weight: bold;
     font-size: 1.5em;
@@ -79,22 +96,22 @@ header h1 {
 
 //Weather
 
-.currentWeather{
+.currentWeather {
     background-color: $color5;
     font-family: $fontfamily1;
     margin: 0;
     padding: .5px
 }
 
-.currentWeather ul{
+.currentWeather ul {
     list-style: none;
 }
 
-.currentWeather li{
+.currentWeather li {
     display: inline-block;
 }
 
-#weather{
+#weather {
     font-weight: bold;
 }
 
@@ -103,4 +120,101 @@ header h1 {
 footer a {
     text-decoration: none;
     color: $color3;
+}
+
+//contact page
+
+.contact div {
+    padding: 5px;
+    background-color: $color3;
+}
+
+#question {
+    width: 300px;
+}
+
+.question {
+    background-color: $color3;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+//guides page
+
+.guides {
+    display: grid;
+    grid-row: 3;
+    margin: 0 auto;
+    justify-content: start;
+    width: 300px;
+}
+
+//adventures page
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px 1px;
+    padding: 5px;
+}
+
+.adventure h3,
+h4 {
+    background-color: $color3;
+}
+
+.adventure p{
+    border: 2px solid $color1;
+    padding: 5px;
+}
+
+.adventure h3{
+    border: 2px solid $color1;
+    padding: 5px;
+}
+
+.adventure h4{
+    border: 2px solid $color1;
+    padding: 5px;
+}
+
+.header {
+    grid-column: 1 / span 4;
+}
+
+.book {
+    border: none;
+    font-family: $fontfamily1;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: $color6;
+    box-shadow: 0px 0px 6px $color1;
+    border-radius: 10px;
+    font-style: 600;
+}
+
+//resrvation page
+
+.bookme div {
+    padding: 5px;
+    background-color: $color3;
+    text-align: left;
+}
+
+.bookit {
+    background-color: $color3;
+    margin: 10px auto;
+    max-width: 500px;
+}
+
+#adult {
+    max-width: 50px;
+}
+
+#child {
+    max-width: 50px;
+}
+
+#phone {
+    max-width: 100px;
 }

@@ -14,7 +14,7 @@ fetch(guideURL)
             let bio = document.createElement('p');
             let cert = document.createElement('p');
 
-            name.textContent = "Name: " + guides[i].firstName + " " + guides[i].nickName + " " + guides[i].lastName;
+            name.textContent = guides[i].firstName + " " + guides[i].nickName + " " + guides[i].lastName;
             bio.textContent = "Bio: " + guides[i].bio;
             cert.textContent = "Certifications: " + guides[i].certs;
 

@@ -30,8 +30,79 @@
         </ul>
     </div>
     <main>
-        <h1>Come Paddle With Us</h1>
-        <p>We have the best guides on the Salmon River</p>
+        <h1>Rafting or Kayaking?</h1>
+        <h3>Book it Now</h3>
+        <p>Note we are seasonal and run the river between May 15 to September 15.</p>
+        <p>We may have to cancel based on weather and river conditions. But mostly we run rain or shine.</p>
+        <form class="bookit">
+            <fieldset class="bookme">
+                <div>
+                    <label for="name">Name: </label>
+                    <input id="name" type="text" spellcheck="false" pattern="[a-zA-Z] {5, }" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number: </label>
+                    <input id="phone" type="tel" required="yes" placeholder="###-###-####">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" spellcheck="false" placeholder="oarmaster@salriver.com">
+                </div>
+                <div>
+                    <label for="date">Adventure Start Date: </label>
+                    <input type="date" id="date">
+                </div>
+                <div>
+                    <label for="days">Days: </label>
+                    <select id="days" name="daylist" form="boatform">
+                        <option value="1/2day">1/2 Day</option>
+                        <option value="1day">1 Day</option>
+                        <options value="2day">2 Day</options>
+                    </select>
+                </div>
+                <div>
+                    <label for="boat">Boat Type: </label>
+                    <select id="boat" name="boatlist" form="boatform">
+                        <option value="raft">Raft</option>
+                        <option value="kayak">Kayak</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="needk">Do you need a kayak? </label>
+                    <select id="neek" name="yesno" form="kayakform">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <p>Note: Private groups requires 4 adventurers. We will team you up if you don't have enough people.</p>
+                    <label for="adult">Adults: </label>
+                    <input id="adult" type="number" required="yes" min="1">
+                </div>
+                <div>
+                    <label for="child">Children: </label>
+                    <input id="child" type="number" required="yes" value="0" min="0">
+                </div>
+                <div>
+                    <label for="youth">Is this a youth group? </label>
+                    <select id="youth" name="yesno" form="youthform">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="diet">Dietary Restrictions: </lable>
+                    <textarea id="diet" rows="3" cols="50" spellcheck="true" placeholder="vegitarian"></textarea>
+                </div>
+                
+                <input class="book" type="submit" value="Book It!">
+            </fieldset>
+            </form>
+            <p>Boat, Oars and are included in the fees</p>
+                <p>For half day adventures please pack your own snacks and water.</p>
+                <p>For 1 day and 2 day adventures we will provide a lunch, 2 days also include a dinner and breakfast. Please let us know of any dietary restrictions.</p>
     </main>
     <footer>
         <h5>&copy; <span id="copyyear"> </span> Salmon River Adventures | Jereme Skelton | <a

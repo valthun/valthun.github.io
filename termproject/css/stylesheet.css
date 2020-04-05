@@ -345,7 +345,12 @@ template {
 font-family: 'Gentium Book Basic', serif;*/
 /*font-family: 'Josefin Sans', sans-serif;
 font-family: 'Gentium Book Basic', serif;*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Josefin Sans", sans-serif;
   color: #0a0908;
 }
@@ -355,16 +360,24 @@ body {
   background-color: #f2f4f3;
 }
 
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 p {
   font-family: "Gentium Book Basic", serif;
 }
 
-header, nav, footer {
+header,
+nav,
+footer {
   margin: 0;
   padding: 1px;
 }
 
-header, footer {
+header,
+footer {
   background-color: #7d8ca3;
 }
 
@@ -408,6 +421,10 @@ header h1 {
   color: #c7ffda;
 }
 
+.activemenu a:hover {
+  font-size: 1.5em;
+}
+
 .active {
   font-weight: bold;
   font-size: 1.5em;
@@ -435,6 +452,95 @@ header h1 {
 footer a {
   text-decoration: none;
   color: #c7ffda;
+}
+
+.contact div {
+  padding: 5px;
+  background-color: #c7ffda;
+}
+
+#question {
+  width: 300px;
+}
+
+.question {
+  background-color: #c7ffda;
+  margin: 10px auto;
+  max-width: 500px;
+}
+
+.guides {
+  display: grid;
+  grid-row: 3;
+  margin: 0 auto;
+  justify-content: start;
+  width: 300px;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px 1px;
+  padding: 5px;
+}
+
+.adventure h3,
+h4 {
+  background-color: #c7ffda;
+}
+
+.adventure p {
+  border: 2px solid #0a0908;
+  padding: 5px;
+}
+
+.adventure h3 {
+  border: 2px solid #0a0908;
+  padding: 5px;
+}
+
+.adventure h4 {
+  border: 2px solid #0a0908;
+  padding: 5px;
+}
+
+.header {
+  grid-column: 1 / span 4;
+}
+
+.book {
+  border: none;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #fed766;
+  box-shadow: 0px 0px 6px #0a0908;
+  border-radius: 10px;
+  font-style: 600;
+}
+
+.bookme div {
+  padding: 5px;
+  background-color: #c7ffda;
+  text-align: left;
+}
+
+.bookit {
+  background-color: #c7ffda;
+  margin: 10px auto;
+  max-width: 500px;
+}
+
+#adult {
+  max-width: 50px;
+}
+
+#child {
+  max-width: 50px;
+}
+
+#phone {
+  max-width: 100px;
 }
 
 @media only screen and (min-width: 600px) {
