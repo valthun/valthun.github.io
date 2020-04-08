@@ -20,4 +20,9 @@ body {
 .bookit {
     max-width: 600px;
 }
+
+.guides {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 }

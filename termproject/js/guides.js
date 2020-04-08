@@ -19,13 +19,14 @@ fetch(guideURL)
             bio.textContent = "Bio: " + guides[i].bio;
             cert.textContent = "Certifications: " + guides[i].certs;
            
-            image.setAttribute('src', guides[i].profilePic);
-            image.setAttribute('alt', h2.textContent + " - " + guides[i].order);
+            head.setAttribute('src', guides[i].profilePic);
+            head.setAttribute('alt', name.textContent + " - " + guides[i].firstName);
 
             pros.appendChild(name);
+            pros.appendChild(head);
             pros.appendChild(bio);
             pros.appendChild(cert);
-            pros.appendChild(head);
+            
 
             document.querySelector('div.guides').appendChild(pros);
         }
