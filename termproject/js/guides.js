@@ -13,14 +13,19 @@ fetch(guideURL)
             let name = document.createElement('h3');
             let bio = document.createElement('p');
             let cert = document.createElement('p');
+            let head = document.createElement('img')
 
             name.textContent = guides[i].firstName + " " + guides[i].nickName + " " + guides[i].lastName;
             bio.textContent = "Bio: " + guides[i].bio;
             cert.textContent = "Certifications: " + guides[i].certs;
+           
+            image.setAttribute('src', guides[i].profilePic);
+            image.setAttribute('alt', h2.textContent + " - " + guides[i].order);
 
             pros.appendChild(name);
             pros.appendChild(bio);
             pros.appendChild(cert);
+            pros.appendChild(head);
 
             document.querySelector('div.guides').appendChild(pros);
         }
